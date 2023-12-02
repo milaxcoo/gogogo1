@@ -1,17 +1,12 @@
 package furniture
 
-import "fmt"
-
-func init() {
-	fmt.Println("Furniture package initialized")
+type Furniture struct {
+	Name string
+	Color string
+	Price int
 }
 
-// Furniture is a struct that represents a piece of furniture.
-type Sofa struct {
-	// Name is the name of the piece of furniture.
-	Name string
-	// Color is the color of the piece of furniture.
-	Color string
-	// Price is the price of the piece of furniture.
-	Price int
+//print func
+func (furniture Furniture) String() string {
+	return "Мебель: " + "\n" + "Название: " + furniture.Name + "\n" + "Цвет: " + furniture.Color + "\n" + "Цена: " + string(furniture.Price) + "\n"
 }
