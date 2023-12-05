@@ -1,13 +1,13 @@
 package house
 
 import (
+	"fmt"
+	family "gogogo1/House/Family"
+	furniture "gogogo1/House/Furniture"
+	bedroom "gogogo1/House/Rooms/Bedroom"
 	hall "gogogo1/House/Rooms/Hall"
 	kitchen "gogogo1/House/Rooms/Kitchen"
-	bedroom "gogogo1/House/Rooms/Bedroom"
-	furniture "gogogo1/House/Furniture"
 	technic "gogogo1/House/Technic"
-	family "gogogo1/House/Family"
-
 )
 
 type House struct{
@@ -111,6 +111,7 @@ func housemaker() House{
 		Family: son,
 		Radio: radio,
 	}
+	fmt.Println("Дом собран")
 	return house
 }
 

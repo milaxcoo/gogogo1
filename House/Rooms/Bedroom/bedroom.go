@@ -16,7 +16,3 @@ type Bedroom struct {
 	Radio technic.Technic
 }
 
-//print func
-func (bedroom Bedroom) String() string {
-	return "Спальня: " + "\n" + bedroom.Table.String() + "\n" + bedroom.Chair.String() + "\n" + bedroom.Bed.String() + "\n" + bedroom.Wardrobe.String() + "\n" + bedroom.Family.String() + "\n" + bedroom.Radio.String()
-}

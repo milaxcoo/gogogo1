@@ -11,10 +11,6 @@ func main() {
 	
 	house := housemaker.House{}
 
-	
 	fmt.Println(house)
-	
-
-	
 
 }

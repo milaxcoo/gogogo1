@@ -13,10 +13,3 @@ type  Kitchen struct{
 	Oven technic.Technic
 	Family family.Family
 }
-
-//print func
-func (kitchen Kitchen) String() string {
-	return "Кухня: " + "\n" + kitchen.Table.String() + "\n" + kitchen.Chair.String() + "\n" + kitchen.Oven.String() + "\n" + kitchen.Family.String()
-}
-
-
