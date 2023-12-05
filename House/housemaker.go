@@ -114,10 +114,3 @@ func housemaker() House{
 	return house
 }
 
-//print func
-func (h House) Print() {
-	println("Дом: ")
-	println(h.Hall.String())
-	println(h.Kitchen.String())
-	println(h.Bedroom.String())
-}
