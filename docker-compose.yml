@@ -1,7 +1,7 @@
-version: '3.3'
+version: '3.8'
 
 services:
-  awesome-project:
+  house-builder:
     build: ./
     command: ./awesome_project
     ports:
@@ -22,9 +22,3 @@ services:
       - POSTGRES_PASSWORD=123
     ports:
       - 5436:5432
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
