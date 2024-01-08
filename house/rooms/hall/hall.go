@@ -1,9 +1,9 @@
 package hall
 
 import (
-	technic "gogogo1/House/Technic"
-	furniture "gogogo1/House/Furniture"
-	family "gogogo1/House/Family"
+	technic "gogogo1/house/technic"
+	furniture "gogogo1/house/furniture"
+	family "gogogo1/house/family"
 )
 
 type Hall struct {

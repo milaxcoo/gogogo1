@@ -1,9 +1,9 @@
 package kitchen
 
 import (
-	furniture "gogogo1/House/Furniture"
-	technic "gogogo1/House/Technic"
-	family "gogogo1/House/Family"
+	furniture "gogogo1/house/furniture"
+	technic "gogogo1/house/technic"
+	family "gogogo1/house/family"
 )
 
 

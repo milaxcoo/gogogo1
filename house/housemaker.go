@@ -2,12 +2,13 @@ package house
 
 import (
 	"fmt"
-	family "gogogo1/House/Family"
-	furniture "gogogo1/House/Furniture"
-	bedroom "gogogo1/House/Rooms/Bedroom"
-	hall "gogogo1/House/Rooms/Hall"
-	kitchen "gogogo1/House/Rooms/Kitchen"
-	technic "gogogo1/House/Technic"
+	family "gogogo1/house/family"
+	furniture "gogogo1/house/furniture"
+	bedroom "gogogo1/house/Rooms/Bedroom"
+	hall "gogogo1/house/Rooms/Hall"
+	kitchen "gogogo1/house/Rooms/Kitchen"
+	technic "gogogo1/house/Technic"
+	
 )
 
 type House struct{
@@ -115,3 +116,15 @@ func housemaker() House{
 	return house
 }
 
+var house House = House{
+	Family: []family.Family{family.Family{
+		FamilyMembers: []family_members.FamilyMembers{neighbourDanae, neighbourSiba, cockroach, spider, batonCat},
+		Surname:       "Общага",
+	},
+	},
+	Devices:       []devices.Devices{laptop, phone, pelletMachine, watch, epilator},
+	Furniture:     []furniture.Furniture{table, chair, wardrobe, bed, shelf},
+	Rooms:         1,
+	Square:        20,
+	CeilingHeight: 250,
+}
