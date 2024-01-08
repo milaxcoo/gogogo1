@@ -4,16 +4,16 @@ import (
 	"fmt"
 )
 
-type Family struct {
+type FamilyLiving struct {
 	Sex bool
-	Age int
 	Name string
+	Age int
+	Guest bool
 	Status bool
-	Children int
 }
 
-func (f Family) Print() {
-	fmt.Print("Имя: ", f.Name, "\nВозраст: ", f.Age, "\n")
+func (f FamilyLiving) Print() {
+	fmt.Print("\nИмя: ", f.Name, "\nВозраст: ", f.Age, "\n")
 	if f.Sex {
 		fmt.Print("Пол: Мужской\n")
 		if f.Status {
@@ -29,10 +29,5 @@ func (f Family) Print() {
 			fmt.Print("Семейное положение: Не замужем\n")
 		}
 	}
-	if f.Children == 0 {
-		fmt.Print("Дети: Нет\n")
-	} else {
-		fmt.Print("Дети: ", f.Children, "\n")
-	}
-
+	
 }

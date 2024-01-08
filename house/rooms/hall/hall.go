@@ -1,9 +1,9 @@
 package hall
 
 import (
-	technic "gogogo1/house/technic"
-	furniture "gogogo1/house/furniture"
-	family "gogogo1/house/family"
+	"fmt"
+	technic "gogogo1/house/additions/technic"
+	furniture "gogogo1/house/additions/furniture"
 )
 
 type Hall struct {
@@ -12,6 +12,13 @@ type Hall struct {
 	Table furniture.Furniture
 	Chair furniture.Furniture
 	Phone technic.Technic
-	Family family.Family
 }
 
+func (h Hall) Print() {
+	fmt.Print("\nЗал:\n")
+	h.Tv.Print()
+	h.Sofa.Print()
+	h.Table.Print()
+	h.Chair.Print()
+	h.Phone.Print()
+}

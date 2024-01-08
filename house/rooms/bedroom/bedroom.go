@@ -1,11 +1,9 @@
 package bedroom
 
 import (
+	"fmt"
 	furniture "gogogo1/house/additions/furniture"
 	technic "gogogo1/house/additions/technic"
-	family "gogogo1/house/additions/family"
-	family_living "gogogo1/house/additions/family/family_living"
-
 )
 
 
@@ -14,12 +12,11 @@ type Bedroom struct {
 	Chair furniture.Furniture
 	Bed furniture.Furniture
 	Wardrobe furniture.Furniture
-	Family family.Family
 	Radio technic.Technic
 }
 
 func (b Bedroom) Print() {
-	b.Family.Print()
+	fmt.Print("\nСпальня:\n")
 	b.Table.Print()
 	b.Chair.Print()
 	b.Bed.Print()

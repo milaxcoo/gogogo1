@@ -1,9 +1,9 @@
 package kitchen
 
 import (
-	furniture "gogogo1/house/furniture"
-	technic "gogogo1/house/technic"
-	family "gogogo1/house/family"
+	"fmt"
+	furniture "gogogo1/house/additions/furniture"
+	technic "gogogo1/house/additions/technic"
 )
 
 
@@ -11,5 +11,11 @@ type  Kitchen struct{
 	Table furniture.Furniture
 	Chair furniture.Furniture
 	Oven technic.Technic
-	Family family.Family
+}
+
+func (k Kitchen) Print() {
+	fmt.Print("\nКухня:\n")
+	k.Table.Print()
+	k.Chair.Print()
+	k.Oven.Print()
 }

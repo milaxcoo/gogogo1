@@ -6,7 +6,7 @@ import (
 )
 
 type Family struct {
-	Family []family_living.Family
+	Family []family_living.FamilyLiving
 	Surname string
 }
 

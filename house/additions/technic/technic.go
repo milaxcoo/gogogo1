@@ -5,13 +5,13 @@ import (
 )
 
 type Technic struct {
-	Type string
+	Name string
 	Color string
 	Smart bool
 }
 
 func (t Technic) Print() {
-	fmt.Print("Тип устройства: ", t.Type, "\nЦвет: ", t.Color, "\n")
+	fmt.Print("\nТехника: ", t.Name, "\nЦвет: ", t.Color, "\n")
 	if t.Smart {
 		fmt.Print("Умный дом: Да\n")
 	} else {

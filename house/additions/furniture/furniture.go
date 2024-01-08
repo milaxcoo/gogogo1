@@ -5,11 +5,11 @@ import (
 )
 
 type Furniture struct {
-	Type string
+	Name string
 	Color string
-	ComfortRating int
+	Price int
 }
 
 func (f Furniture) Print() {
-	fmt.Print("Тип мебели: ", f.Type, "\nЦвет: ", f.Color, "\nРейтинг комфорта: ", f.ComfortRating, "\n")
+	fmt.Print("\nМебель: ", f.Name, "\nЦвет: ", f.Color, "\nЦена: ", f.Price, "\n")
 }

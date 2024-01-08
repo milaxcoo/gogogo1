@@ -1,16 +1,17 @@
 package main
 
 import (
+	"gogogo1/house"
 	
-	housemaker "gogogo1/House"
-)
+	
 
+)
 
 
 func main() {
 	
-	house := housemaker.House{}
+	house := house.CreateHouse()
 
-	house.MakeHouse()
+	house.Print()
 
 }
