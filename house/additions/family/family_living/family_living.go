@@ -29,5 +29,4 @@ func (f FamilyLiving) Print() {
 			fmt.Print("Семейное положение: Не замужем\n")
 		}
 	}
-	
 }

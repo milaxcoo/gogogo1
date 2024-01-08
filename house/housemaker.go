@@ -9,8 +9,6 @@ import (
 	"gogogo1/house/rooms/bedroom"
 	"gogogo1/house/rooms/hall"
 	"gogogo1/house/rooms/kitchen"
-
-
 )
 
 type House struct {
@@ -30,7 +28,6 @@ func (h House) Print() {
 	h.Kitchen.Print()
 	h.Hall.Print()
 	h.Bedroom.Print()
-
 }
 
 func CreateHouse() House {
@@ -109,7 +106,7 @@ func CreateHouse() House {
 	}
 
 	house := House{
-		Family: []family.Family{family.Family{
+		Family: []family.Family{{
 			Family: []family_living.FamilyLiving{dad, mom, son, guest},
 			Surname:       "Медведевы",
 			},

@@ -6,7 +6,6 @@ import (
 	technic "gogogo1/house/additions/technic"
 )
 
-
 type Bedroom struct {
 	Table furniture.Furniture
 	Chair furniture.Furniture
@@ -23,4 +22,3 @@ func (b Bedroom) Print() {
 	b.Wardrobe.Print()
 	b.Radio.Print()
 }
-
